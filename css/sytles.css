@@ -451,7 +451,7 @@ nav:active {
 /*Footer*/
 .footer {
     background-color: #2E2F42;
-    letter-spacing: 17.33;
+    letter-spacing: 0.02em;
     padding: 100px 0;
 }
 
@@ -547,10 +547,10 @@ nav:active {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
-    letter-spacing: 2%;
     text-align: left;
     color: #ffffff;
     letter-spacing: 0.02em;
+    margin-bottom: 16px;
 }
 
 .footer .footer-subscribe .footer-form {
@@ -616,7 +616,8 @@ nav:active {
 
 
 /*Modal*/
-.modal {
+.modal-window {
+    display: flex;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -732,8 +733,12 @@ nav:active {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus {
+.form-input:focus-within {
     border-color: #4D5AE5;
+}
+
+.form-input:focus-within .form-icon {
+    fill: #4D5AE5;
 }
 
 .form-icon {
@@ -743,10 +748,6 @@ nav:active {
     left: 16px;
     transform: translateY(-50%);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
-}
-
-.form-input:focus-within .form-icon {
-    fill: #4D5AE5;
 }
 
 .form-container-text {
@@ -795,7 +796,6 @@ nav:active {
     opacity: 0;
     width: 0;
     height: 0;
-    visu
 }
 
 .form-check-span {
@@ -823,7 +823,7 @@ input[type="checkbox"]:checked+label .form-check-span {
 .form-button {
     display: block;
     text-align: center;
-    margin-top: 24px 0;
+    margin-top: 24px;
 }
 
 .button-send {
