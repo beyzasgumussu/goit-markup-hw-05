@@ -543,7 +543,7 @@ nav:active {
     flex-direction: column;
 }
 
-.footer .footer-subscribe > p {
+.footer-subscribe-title {
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -617,6 +617,7 @@ nav:active {
 
 /*Modal*/
 .modal-window {
+    box-sizing: border-box;
     position: fixed;
     top: 0;
     left: 0;
